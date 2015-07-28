@@ -14,6 +14,8 @@ And it's time to show what you can do!
 
 It means you shouldn't move on until you can do this successfully.
 
+It also means that you should be able to do all of this on your own, without direct assistance from instructors or classmates.  If you are stuck, it may mean that you missed steps from earlier repos, so consider re-doing exercises from earlier in the unit and then coming back to this app after having practiced more.
+
 ## Requirements
 
 You must build an express/mongo app that:
@@ -45,7 +47,7 @@ You may choose which problem domain to model.  If you have an existing personal 
 1. Deploy to Heroku or Bluemix or run.pivotal.io (Cloud Foundry) or your own unix server
 1. Create a project in students.galvanize.com and add your public repo and your deployed URL
 1. Add your ERD diagram to the repo and embed it in the README
-1. Get the app fully working :)
+1. Get the app fully working within 72 hours
 
 ## UI Patterns
 
