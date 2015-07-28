@@ -57,7 +57,7 @@ While your app may use whatever UI you can think up that matches the requirement
 
 ![](wireframes/one-to-many-ui-pattern.png)
 
-**One-to-many**
+**Many-to-many**
 
 ![](wireframes/many-to-many-ui-pattern.png)
 
