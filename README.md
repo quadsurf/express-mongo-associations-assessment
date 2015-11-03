@@ -20,26 +20,24 @@ It also means that you should be able to do all of this on your own, without dir
 
 You must build an express/mongo app that:
 
-- Has at least one one-many relationship
+- Has at least one one-to-many relationship
   - Must use referenced documents, not embedded documents
-  - Must display both the "parent" and the "children" on the same page
+  - Must display both the "parents" and the "children" on the same page
 - Has at least one many-to-many relationship
-  - Must use an array of ids in one of the collections
-  - Must display the "parent" and the "children" on the same page
+  - Must _not_ use arrays of ids in either of the collections (must use a join collection)
+  - Must display the "parents" and the "children" on the same page
 - Has a complete and correct ERD diagram that describes your model
   - Can be a whiteboard drawing you took a picture of
-- Allows users to CRUD all of the models in the app
+- Allows users to CRUD the child models in the app
   - See UI patterns for suggestions
-- Server-side validations on all objects
-  - simple required-field validations will work
 
 In code, your app must:
 
 - use all promises (no callbacks allowed!)
-- not have _any_ references to Monk or Mongoose in your routes files
-  - _all_ db-related calls must be in files in your `./lib` directory
+- not have _any_ references to Monk or Mongoose (or any other database driver) in your routes files
+  - _all_ db-related calls must be in files in your `./lib` directory or some other directory
 
-You may choose which problem domain to model.  If you have an existing personal project that meets 100% of these criteria, you may submit that as well, but c'mon, you could use the extra practice!
+You may choose which problem domain to model.  If you have an existing personal project that meets 100% of these criteria, you may submit that as well.  Also, this may serve as the basis for your capstone project if it fits all the other criteria.
 
 ## Instructions
 
@@ -60,6 +58,20 @@ While your app may use whatever UI you can think up that matches the requirement
 **Many-to-many**
 
 ![](wireframes/many-to-many-ui-pattern.png)
+
+## Example Domains
+
+**Videos**
+
+One-to-many: comments
+Many-to-many: tags - one video can be tagged by many taggings, each tag can be applied to many videos
+
+**Todos**
+
+One-to-many: Lists => Todos
+Many-to-many: Todoes <=> Labels
+
+![](wireframes/association-index-pages.png)
 
 ## Route Conventions
 
